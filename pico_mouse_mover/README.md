@@ -42,6 +42,7 @@ git clone https://github.com/raspberrypi/pico-sdk.git
 cd pico-sdk
 git submodule update --init
 export PICO_SDK_PATH=/path/to/pico-sdk
+```
 
 #### On Linux (Ubuntu/Debian):
 ```bash
@@ -54,12 +55,18 @@ git clone https://github.com/raspberrypi/pico-sdk.git
 cd pico-sdk
 git submodule update --init
 export PICO_SDK_PATH=/path/to/pico-sdk
-On Windows:
+```
+
+###On Windows:
 Follow the official Pico SDK installation guide
+
+
 2. Clone This Repository
 bashgit clone https://github.com/yourusername/pico-mouse-mover.git
 cd pico-mouse-mover
-🔨 Building the Project
+
+
+## 🔨 Building the Project
 1. Create Build Directory
 bashmkdir build
 cd build
@@ -74,7 +81,7 @@ pico_mouse_mover.elf - ELF executable
 pico_mouse_mover.bin - Binary file
 pico_mouse_mover.hex - Intel HEX file
 
-📤 Flashing the Firmware
+## 📤 Flashing the Firmware
 Method 1: UF2 Bootloader (Recommended)
 
 Hold the BOOTSEL button on your Pico while plugging it into your computer
@@ -86,7 +93,7 @@ Method 2: Using Picotool
 bash# Put Pico in bootloader mode, then:
 picotool load pico_mouse_mover.uf2
 picotool reboot
-🚀 Usage
+## 🚀 Usage
 
 Flash the firmware to your Pico using the steps above
 Plug the Pico into any computer via USB
@@ -105,3 +112,5 @@ Movement Frequency: Every 50-200ms during active periods
 
 Built using TinyUSB library
 Based on Raspberry Pi Pico SDK examples
+
+Note: This device is intended for legitimate use cases such as preventing screen savers or maintaining system activity during presentations. Please use responsibly and in accordance with your organization's IT policies.
